@@ -14,8 +14,6 @@ class editor extends JFrame implements ActionListener {
 	// Frame
 	JFrame f;
 
-	UndoManager manager = new UndoManager();
-
 	// Constructor
 	editor()
 	{
