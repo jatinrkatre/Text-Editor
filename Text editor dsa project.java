@@ -8,13 +8,9 @@ import javax.swing.text.*;
 
 
 class editor extends JFrame implements ActionListener {
-	// Text component
 	JTextArea t;
-
-	// Frame
 	JFrame f;
 
-	// Constructor
 	editor()
 	{
 		// Create a frame
@@ -30,16 +26,12 @@ class editor extends JFrame implements ActionListener {
 		catch (Exception e) {
 		}
 
-		// Text component
 		t = new JTextArea();
 
-		// Create a menubar
 		JMenuBar mb = new JMenuBar();
 
-		// Create amenu for menu
 		JMenu m1 = new JMenu("File");
 
-		// Create menu items
 		JMenuItem mi1 = new JMenuItem("New");
 		JMenuItem mi2 = new JMenuItem("Open");
 		JMenuItem mi3 = new JMenuItem("Save");
@@ -51,29 +43,24 @@ class editor extends JFrame implements ActionListener {
 		mi2.addActionListener(this);
 		mi3.addActionListener(this);
 		mi9.addActionListener(this);
-        mi8.addActionListener(this);
+                mi8.addActionListener(this);
 
 		m1.add(mi1);
 		m1.add(mi2);
 		m1.add(mi3);
 		m1.add(mi9);
-        m1.add(mi8);
+                m1.add(mi8);
 
-		// Create amenu for menu
 		JMenu m2 = new JMenu("Edit");
 
-		// Create menu items
 		JMenuItem mi4 = new JMenuItem("Cut");
 		JMenuItem mi5 = new JMenuItem("Copy");
 		JMenuItem mi6 = new JMenuItem("Paste");
 		
         
-
-		// Add action listener
 		mi4.addActionListener(this);
 		mi5.addActionListener(this);
 		mi6.addActionListener(this);
-       
        
 
 		m2.add(mi4);
@@ -81,7 +68,6 @@ class editor extends JFrame implements ActionListener {
 		m2.add(mi6);
         
         
-
 		mb.add(m1);
 		mb.add(m2);
 		
@@ -199,7 +185,6 @@ class editor extends JFrame implements ActionListener {
 		}
 	}
 
-	// Main class
 	public static void main(String args[])
 	{
 		editor e = new editor();
