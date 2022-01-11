@@ -20,7 +20,7 @@ class editor extends JFrame implements ActionListener {
 			// Set metal look and feel
 			UIManager.setLookAndFeel("javax.swing.plaf.metal.MetalLookAndFeel");
 
-			// Set theme to ocean
+			
 			MetalLookAndFeel.setCurrentTheme( new OceanTheme());
 		}
 		catch (Exception e) {
